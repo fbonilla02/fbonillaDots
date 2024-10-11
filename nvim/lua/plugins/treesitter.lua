@@ -1,11 +1,17 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    tag = "v0.9.1",
+    --version = "*",
+    build = ":TSUpdate",
+    branch = "master",
     opts = {
       ensure_installed = {
         "javascript",
         "typescript",
+        "astro",
+        "rust",
+        "gitignore",
+        "html",
         "css",
         "gitignore",
         "graphql",

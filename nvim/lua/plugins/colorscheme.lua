@@ -28,10 +28,11 @@ return {
   {
     "rebelot/kanagawa.nvim",
     name = "kanagawa",
+
     priority = 1000,
     opts = {
       transparent = true,
-      theme = "wave",
+      theme = "kanagawa",
       overrides = function(colors)
         local theme = colors.theme
         return {
@@ -56,6 +57,16 @@ return {
           PmenuSel = { fg = "NONE", bg = theme.ui.bg_p2 },
           PmenuSbar = { bg = theme.ui.bg_m1 },
           PmenuThumb = { bg = theme.ui.bg_p2 },
+          -- Colores de los diagnosticos
+          DiagnosticError = { fg = "#FF5D62" },
+          DiagnosticWarn = { fg = "#DCA561" },
+          DiagnosticInfo = { fg = "#7FB4CA" },
+          DiagnosticHint = { fg = "#A3D4D5" },
+          -- Colores de los diagonosticos (subrayado)
+          DiagnosticUnderlineError = { undercurl = true, sp = "#FF5D62" }, -- Subrayado de errores
+          DiagnosticUnderlineWarn = { undercurl = true, sp = "#DCA561" }, -- Subrayado de advertencias
+          DiagnosticUnderlineInfo = { undercurl = true, sp = "#7FB4CA" }, -- Subrayado de información
+          DiagnosticUnderlineHint = { undercurl = true, sp = "#A3D4D5" }, -- Subrayado de sugerencias
         }
       end,
     },
@@ -103,7 +114,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- change this line to change the color scheme
-      colorscheme = "kanagawa-wave",
+      colorscheme = "kanagawa",
     },
   },
 }
