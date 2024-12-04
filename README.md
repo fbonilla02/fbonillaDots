@@ -94,7 +94,7 @@ cargo install zellij
 #### 10. Instalaciones adicionales
 
 ```
-brew install fzf fd ripgrep bat git gcc curl lazygit jq bash
+brew install fzf fd ripgrep bat git gcc curl lazygit jq bash neovim
 ```
 
 #### 11. Movemos los archivos del repo a config
@@ -102,6 +102,11 @@ Con esto ya nos quedara las configuraciones que están en este repo
 ```bash
 cp -r fbonillaDots/* ~/.config/
 ```
+#### 12. Movemos el archivo .zshrc 
+```
+cp -r fbonillaDots/.zshrc ./
+```
+
 ### 12. Por último instala node
 Puedes usar node con nvm o con brew, yo lo recomiendo con nvm ya que te permite gestionar versiones
 
