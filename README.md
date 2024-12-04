@@ -107,7 +107,7 @@ cp -r fbonillaDots/* ~/.config/
 cp -r fbonillaDots/.zshrc ./
 ```
 
-### 12. Por último instala node
+### 13. Por último instala node
 Puedes usar node con nvm o con brew, yo lo recomiendo con nvm ya que te permite gestionar versiones
 
 ```
