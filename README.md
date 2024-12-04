@@ -70,6 +70,7 @@ chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+
 #### 8. Instalar Homebrew 
 Vamos a instalar homebrew debido a que es gestor de paquetes bastante facil de usar y nos trae la última versión de Neovim
 
@@ -95,6 +96,10 @@ cargo install zellij
 
 ```
 brew install fzf fd ripgrep bat git gcc curl lazygit jq bash neovim
+```
+Instalamos paquetes de autocompletado y sintaxis de zsh
+```
+brew install zsh-syntax-highlighting zsh-autosuggestions
 ```
 
 #### 11. Movemos los archivos del repo a config
